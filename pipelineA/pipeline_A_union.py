@@ -28,7 +28,7 @@ import json
 import joblib
 import shap
 
-BASE_DIR = "/mnt/c/Users/najla/Downloads/SCOL 391 - Mansbach/CleaningDBsScripts/dbaasp_grampa_hemolytik_hc50_mic_ANALYSIS"
+BASE_DIR = os.getcwd()
 HC50_CSV = os.path.join(BASE_DIR, "lasso_pipeline_A_HC50_features.csv")
 MIC_CSV  = os.path.join(BASE_DIR, "lasso_pipeline_A_MIC_features.csv")
 OUT_CM   = os.path.join(BASE_DIR, "svm_confusion_matrix_pipeline_A_UNION.png")

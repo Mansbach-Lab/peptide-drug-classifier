@@ -20,7 +20,7 @@ from sklearn.metrics import classification_report, confusion_matrix, ConfusionMa
 import matplotlib.pyplot as plt
 import os
 
-BASE_DIR = "/mnt/c/Users/najla/Downloads/SCOL 391 - Mansbach/CleaningDBsScripts/dbaasp_grampa_hemolytik_hc50_mic_ANALYSIS"
+BASE_DIR = os.getcwd()
 INPUT_CSV = os.path.join(BASE_DIR, "lasso_pipeline_A_mic_features.csv")
 print("MIC results:")
 OUT_CM    = os.path.join(BASE_DIR, "svm_confusion_matrix_pipeline_A_MIC.png")

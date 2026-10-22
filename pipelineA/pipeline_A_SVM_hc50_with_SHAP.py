@@ -27,7 +27,7 @@ import os
 import numpy as np
 import shap
 
-BASE_DIR = "/mnt/c/Users/najla/Downloads/SCOL 391 - Mansbach/CleaningDBsScripts/dbaasp_grampa_hemolytik_hc50_mic_ANALYSIS"
+BASE_DIR = os.getcwd()
 INPUT_CSV = os.path.join(BASE_DIR, "lasso_pipeline_A_HC50_features.csv")
 print("HC50 results:")
 OUT_CM    = os.path.join(BASE_DIR, "svm_confusion_matrix_pipeline_A_HC50.png")
